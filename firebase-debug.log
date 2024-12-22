@@ -1,0 +1,396 @@
+[debug] [2024-12-21T22:39:46.072Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T22:39:46.078Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-21T22:39:46.079Z] CLI Version:   13.29.1
+[debug] [2024-12-21T22:39:46.079Z] Platform:      win32
+[debug] [2024-12-21T22:39:46.079Z] Node Version:  v22.11.0
+[debug] [2024-12-21T22:39:46.080Z] Time:          Sun Dec 22 2024 07:39:46 GMT+0900 (日本標準時)
+[debug] [2024-12-21T22:39:46.080Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T22:39:46.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T22:39:46.237Z] > authorizing via signed-in user (suchannel4649@gmail.com)
+[debug] [2024-12-21T22:39:46.238Z] [iam] checking project fir-chat-app-master-dad5a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T22:39:46.240Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:46.241Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:46.243Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions [none]
+[debug] [2024-12-21T22:39:46.243Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions x-goog-quota-user=projects/fir-chat-app-master-dad5a
+[debug] [2024-12-21T22:39:46.243Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:39:47.853Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions 200
+[debug] [2024-12-21T22:39:47.854Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:39:47.855Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:47.856Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:47.857Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:39:48.756Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:39:48.756Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a {"projectId":"fir-chat-app-master-dad5a","projectNumber":"238468462066","displayName":"firebase-chat-app-master","name":"projects/fir-chat-app-master-dad5a","resources":{"hostingSite":"fir-chat-app-master-dad5a","realtimeDatabaseInstance":"fir-chat-app-master-dad5a-default-rtdb"},"state":"ACTIVE","etag":"1_5708c568-ee63-48d8-bea8-ae7ff1d52b49"}
+[debug] [2024-12-21T22:39:55.424Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:55.424Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:39:55.425Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites pageToken=&pageSize=10
+[debug] [2024-12-21T22:40:00.712Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites 200
+[debug] [2024-12-21T22:40:00.712Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites {"sites":[{"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}]}
+[debug] [2024-12-21T22:40:00.713Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:40:00.713Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:40:00.714Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config [none]
+[debug] [2024-12-21T22:40:03.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config 200
+[debug] [2024-12-21T22:40:03.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config {"projectId":"fir-chat-app-master-dad5a","appId":"1:238468462066:web:86f591b050faeb15e7276b","databaseURL":"https://fir-chat-app-master-dad5a-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"fir-chat-app-master-dad5a.firebasestorage.app","apiKey":"AIzaSyAFbZacUTS-YYrn94q3AOHWdhJzkz5XZr0","authDomain":"fir-chat-app-master-dad5a.firebaseapp.com","messagingSenderId":"238468462066","measurementId":"G-TTCGQV01KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T22:40:19.556Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:40:19.556Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:40:19.557Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:40:26.988Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:40:26.988Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a {"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.0.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/api/blog/[id]/route.ts:49:7
+Type error: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: NextResponse<unknown>; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  Types of property '__param_type__' are incompatible.
+    Property 'params' is missing in type 'NextResponse<unknown>' but required in type 'RouteContext'.
+
+  47 |     Diff<
+  48 |       ParamCheck<RouteContext>,>
+  49 |       {
+     |       
+  50 |         __tag__: 'GET'
+  51 |         __param_position__: 'second'
+  52 |         __param_type__: SecondArg<MaybeField<TEntry, 'GET'>> | response
+  }
+
+[debug] [2024-12-21T22:41:22.107Z] Error: ENOENT: no such file or directory, open 'C:\Users\user\Desktop\post-blog\blogdayo\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-21T22:47:31.598Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T22:47:31.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-21T22:47:31.604Z] CLI Version:   13.29.1
+[debug] [2024-12-21T22:47:31.605Z] Platform:      win32
+[debug] [2024-12-21T22:47:31.605Z] Node Version:  v22.11.0
+[debug] [2024-12-21T22:47:31.606Z] Time:          Sun Dec 22 2024 07:47:31 GMT+0900 (日本標準時)
+[debug] [2024-12-21T22:47:31.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T22:47:31.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T22:47:31.759Z] > authorizing via signed-in user (suchannel4649@gmail.com)
+[debug] [2024-12-21T22:47:31.759Z] [iam] checking project fir-chat-app-master-dad5a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T22:47:31.762Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:31.762Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:31.765Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions [none]
+[debug] [2024-12-21T22:47:31.765Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions x-goog-quota-user=projects/fir-chat-app-master-dad5a
+[debug] [2024-12-21T22:47:31.765Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:47:32.819Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions 200
+[debug] [2024-12-21T22:47:32.819Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:47:32.822Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:32.822Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:32.823Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:47:33.715Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:47:33.716Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a {"projectId":"fir-chat-app-master-dad5a","projectNumber":"238468462066","displayName":"firebase-chat-app-master","name":"projects/fir-chat-app-master-dad5a","resources":{"hostingSite":"fir-chat-app-master-dad5a","realtimeDatabaseInstance":"fir-chat-app-master-dad5a-default-rtdb"},"state":"ACTIVE","etag":"1_5708c568-ee63-48d8-bea8-ae7ff1d52b49"}
+[debug] [2024-12-21T22:47:39.309Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:39.309Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:39.310Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites pageToken=&pageSize=10
+[debug] [2024-12-21T22:47:41.015Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites 200
+[debug] [2024-12-21T22:47:41.016Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites {"sites":[{"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}]}
+[debug] [2024-12-21T22:47:41.016Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:41.017Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:41.017Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config [none]
+[debug] [2024-12-21T22:47:42.243Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config 200
+[debug] [2024-12-21T22:47:42.244Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config {"projectId":"fir-chat-app-master-dad5a","appId":"1:238468462066:web:86f591b050faeb15e7276b","databaseURL":"https://fir-chat-app-master-dad5a-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"fir-chat-app-master-dad5a.firebasestorage.app","apiKey":"AIzaSyAFbZacUTS-YYrn94q3AOHWdhJzkz5XZr0","authDomain":"fir-chat-app-master-dad5a.firebaseapp.com","messagingSenderId":"238468462066","measurementId":"G-TTCGQV01KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T22:47:55.956Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:55.956Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:47:55.957Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:47:57.721Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:47:57.722Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a {"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.0.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/api/blog/[id]/route.ts:49:7
+Type error: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: NextResponse<unknown>; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  Types of property '__param_type__' are incompatible.
+    Property 'params' is missing in type 'NextResponse<unknown>' but required in type 'RouteContext'.
+
+  47 |     Diff<
+  48 |       ParamCheck<RouteContext>,
+> 49 |       {
+     |       ^
+  50 |         __tag__: 'GET'
+  51 |         __param_position__: 'second'
+  52 |         __param_type__: SecondArg<MaybeField<TEntry, 'GET'>> | response
+
+[debug] [2024-12-21T22:48:20.949Z] Error: ENOENT: no such file or directory, open 'C:\Users\user\Desktop\post-blog\blogdayo\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-21T22:53:50.935Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T22:53:50.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-21T22:53:50.943Z] CLI Version:   13.29.1
+[debug] [2024-12-21T22:53:50.943Z] Platform:      win32
+[debug] [2024-12-21T22:53:50.944Z] Node Version:  v22.11.0
+[debug] [2024-12-21T22:53:50.944Z] Time:          Sun Dec 22 2024 07:53:50 GMT+0900 (日本標準時)
+[debug] [2024-12-21T22:53:50.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T22:53:51.104Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T22:53:51.105Z] > authorizing via signed-in user (suchannel4649@gmail.com)
+[debug] [2024-12-21T22:53:51.105Z] [iam] checking project fir-chat-app-master-dad5a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T22:53:51.108Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:51.109Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:51.112Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions [none]
+[debug] [2024-12-21T22:53:51.113Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions x-goog-quota-user=projects/fir-chat-app-master-dad5a
+[debug] [2024-12-21T22:53:51.113Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:53:52.037Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions 200
+[debug] [2024-12-21T22:53:52.038Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:53:52.040Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:52.041Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:52.042Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:53:53.081Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:53:53.082Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a {"projectId":"fir-chat-app-master-dad5a","projectNumber":"238468462066","displayName":"firebase-chat-app-master","name":"projects/fir-chat-app-master-dad5a","resources":{"hostingSite":"fir-chat-app-master-dad5a","realtimeDatabaseInstance":"fir-chat-app-master-dad5a-default-rtdb"},"state":"ACTIVE","etag":"1_5708c568-ee63-48d8-bea8-ae7ff1d52b49"}
+[debug] [2024-12-21T22:53:58.890Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:58.890Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:53:58.891Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites pageToken=&pageSize=10
+[debug] [2024-12-21T22:54:00.609Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites 200
+[debug] [2024-12-21T22:54:00.609Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites {"sites":[{"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}]}
+[debug] [2024-12-21T22:54:00.611Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:54:00.612Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:54:00.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config [none]
+[debug] [2024-12-21T22:54:01.941Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config 200
+[debug] [2024-12-21T22:54:01.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config {"projectId":"fir-chat-app-master-dad5a","appId":"1:238468462066:web:86f591b050faeb15e7276b","databaseURL":"https://fir-chat-app-master-dad5a-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"fir-chat-app-master-dad5a.firebasestorage.app","apiKey":"AIzaSyAFbZacUTS-YYrn94q3AOHWdhJzkz5XZr0","authDomain":"fir-chat-app-master-dad5a.firebaseapp.com","messagingSenderId":"238468462066","measurementId":"G-TTCGQV01KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T22:54:15.270Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:54:15.270Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:54:15.271Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:54:17.201Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:54:17.202Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a {"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.0.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/api/blog/[id]/route.ts:49:7
+Type error: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: NextResponse<unknown>; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  Types of property '__param_type__' are incompatible.
+    Property 'params' is missing in type 'NextResponse<unknown>' but required in type 'RouteContext'.
+
+  47 |     Diff<
+  48 |       ParamCheck<RouteContext>,
+> 49 |       {
+     |       ^
+  50 |         __tag__: 'GET'
+  51 |         __param_position__: 'second'
+  52 |         __param_type__: SecondArg<MaybeField<TEntry, 'GET'>> | response
+
+[debug] [2024-12-21T22:54:41.364Z] Error: ENOENT: no such file or directory, open 'C:\Users\user\Desktop\post-blog\blogdayo\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-21T22:57:54.141Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T22:57:54.147Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-21T22:57:54.148Z] CLI Version:   13.29.1
+[debug] [2024-12-21T22:57:54.149Z] Platform:      win32
+[debug] [2024-12-21T22:57:54.149Z] Node Version:  v22.11.0
+[debug] [2024-12-21T22:57:54.150Z] Time:          Sun Dec 22 2024 07:57:54 GMT+0900 (日本標準時)
+[debug] [2024-12-21T22:57:54.150Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T22:57:54.297Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T22:57:54.298Z] > authorizing via signed-in user (suchannel4649@gmail.com)
+[debug] [2024-12-21T22:57:54.299Z] [iam] checking project fir-chat-app-master-dad5a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T22:57:54.301Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:57:54.301Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:57:54.303Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions [none]
+[debug] [2024-12-21T22:57:54.304Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions x-goog-quota-user=projects/fir-chat-app-master-dad5a
+[debug] [2024-12-21T22:57:54.304Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:57:55.741Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions 200
+[debug] [2024-12-21T22:57:55.741Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T22:57:55.743Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:57:55.744Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:57:55.745Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:57:56.944Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:57:56.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a {"projectId":"fir-chat-app-master-dad5a","projectNumber":"238468462066","displayName":"firebase-chat-app-master","name":"projects/fir-chat-app-master-dad5a","resources":{"hostingSite":"fir-chat-app-master-dad5a","realtimeDatabaseInstance":"fir-chat-app-master-dad5a-default-rtdb"},"state":"ACTIVE","etag":"1_5708c568-ee63-48d8-bea8-ae7ff1d52b49"}
+[debug] [2024-12-21T22:58:02.295Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:02.295Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:02.295Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites pageToken=&pageSize=10
+[debug] [2024-12-21T22:58:03.327Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites 200
+[debug] [2024-12-21T22:58:03.327Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites {"sites":[{"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}]}
+[debug] [2024-12-21T22:58:03.329Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:03.329Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:03.330Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config [none]
+[debug] [2024-12-21T22:58:04.831Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config 200
+[debug] [2024-12-21T22:58:04.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config {"projectId":"fir-chat-app-master-dad5a","appId":"1:238468462066:web:86f591b050faeb15e7276b","databaseURL":"https://fir-chat-app-master-dad5a-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"fir-chat-app-master-dad5a.firebasestorage.app","apiKey":"AIzaSyAFbZacUTS-YYrn94q3AOHWdhJzkz5XZr0","authDomain":"fir-chat-app-master-dad5a.firebaseapp.com","messagingSenderId":"238468462066","measurementId":"G-TTCGQV01KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T22:58:18.394Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:18.395Z] Checked if tokens are valid: true, expires at: 1734823789500
+[debug] [2024-12-21T22:58:18.395Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T22:58:19.889Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T22:58:19.890Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a {"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.0.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/api/blog/[id]/route.ts:49:7
+Type error: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: NextResponse<unknown>; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  Types of property '__param_type__' are incompatible.
+    Property 'params' is missing in type 'NextResponse<unknown>' but required in type 'RouteContext'.
+
+  47 |     Diff<
+  48 |       ParamCheck<RouteContext>,
+> 49 |       {
+     |       ^
+  50 |         __tag__: 'GET'
+  51 |         __param_position__: 'second'
+  52 |         __param_type__: SecondArg<MaybeField<TEntry, 'GET'>>
+
+[debug] [2024-12-21T22:58:43.944Z] Error: ENOENT: no such file or directory, open 'C:\Users\user\Desktop\post-blog\blogdayo\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-21T23:21:45.161Z] ----------------------------------------------------------------------
+[debug] [2024-12-21T23:21:45.168Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-21T23:21:45.169Z] CLI Version:   13.29.1
+[debug] [2024-12-21T23:21:45.169Z] Platform:      win32
+[debug] [2024-12-21T23:21:45.170Z] Node Version:  v22.11.0
+[debug] [2024-12-21T23:21:45.170Z] Time:          Sun Dec 22 2024 08:21:45 GMT+0900 (日本標準時)
+[debug] [2024-12-21T23:21:45.171Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-21T23:21:45.321Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-21T23:21:45.322Z] > authorizing via signed-in user (suchannel4649@gmail.com)
+[debug] [2024-12-21T23:21:45.322Z] [iam] checking project fir-chat-app-master-dad5a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-21T23:21:45.324Z] Checked if tokens are valid: false, expires at: 1734823789500
+[debug] [2024-12-21T23:21:45.325Z] Checked if tokens are valid: false, expires at: 1734823789500
+[debug] [2024-12-21T23:21:45.325Z] > refreshing access token with scopes: []
+[debug] [2024-12-21T23:21:45.329Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-21T23:21:45.329Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-21T23:21:46.055Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-21T23:21:46.055Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-21T23:21:46.074Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions [none]
+[debug] [2024-12-21T23:21:46.075Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions x-goog-quota-user=projects/fir-chat-app-master-dad5a
+[debug] [2024-12-21T23:21:46.075Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T23:21:46.945Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions 200
+[debug] [2024-12-21T23:21:46.946Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-chat-app-master-dad5a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-21T23:21:46.949Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:46.950Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:46.952Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T23:21:47.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T23:21:47.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a {"projectId":"fir-chat-app-master-dad5a","projectNumber":"238468462066","displayName":"firebase-chat-app-master","name":"projects/fir-chat-app-master-dad5a","resources":{"hostingSite":"fir-chat-app-master-dad5a","realtimeDatabaseInstance":"fir-chat-app-master-dad5a-default-rtdb"},"state":"ACTIVE","etag":"1_5708c568-ee63-48d8-bea8-ae7ff1d52b49"}
+[debug] [2024-12-21T23:21:53.468Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:53.469Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:53.469Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites pageToken=&pageSize=10
+[debug] [2024-12-21T23:21:55.136Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites 200
+[debug] [2024-12-21T23:21:55.137Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites {"sites":[{"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}]}
+[debug] [2024-12-21T23:21:55.138Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:55.138Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:21:55.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config [none]
+[debug] [2024-12-21T23:21:56.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config 200
+[debug] [2024-12-21T23:21:56.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:238468462066:web:86f591b050faeb15e7276b/config {"projectId":"fir-chat-app-master-dad5a","appId":"1:238468462066:web:86f591b050faeb15e7276b","databaseURL":"https://fir-chat-app-master-dad5a-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"fir-chat-app-master-dad5a.firebasestorage.app","apiKey":"AIzaSyAFbZacUTS-YYrn94q3AOHWdhJzkz5XZr0","authDomain":"fir-chat-app-master-dad5a.firebaseapp.com","messagingSenderId":"238468462066","measurementId":"G-TTCGQV01KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-12-21T23:22:10.075Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:22:10.075Z] Checked if tokens are valid: true, expires at: 1734826905056
+[debug] [2024-12-21T23:22:10.076Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a [none]
+[debug] [2024-12-21T23:22:11.488Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a 200
+[debug] [2024-12-21T23:22:11.488Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a {"name":"projects/fir-chat-app-master-dad5a/sites/fir-chat-app-master-dad5a","defaultUrl":"https://fir-chat-app-master-dad5a.web.app","appId":"1:238468462066:web:86f591b050faeb15e7276b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.0.4
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/api/blog/[id]/route.ts:49:7
+Type error: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: NextResponseWithParams; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  The types of '__param_type__.params' are incompatible between these types.
+    Type 'Record<string, any>' is missing the following properties from type 'Promise<any>': then, catch, finally, [Symbol.toStringTag]
+
+  47 |     Diff<
+  48 |       ParamCheck<RouteContext>,
+> 49 |       {
+     |       ^
+  50 |         __tag__: 'GET'
+  51 |         __param_position__: 'second'
+  52 |         __param_type__: SecondArg<MaybeField<TEntry, 'GET'>>
+
+[debug] [2024-12-21T23:22:38.551Z] Error: ENOENT: no such file or directory, open 'C:\Users\user\Desktop\post-blog\blogdayo\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
